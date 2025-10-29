@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Heart Disease Prediction</h1>
+        <form action="/prediction" method="POST">
+            <div class="row">
+                <h1>OUTPUT:<span class="text-danger">{{output}}</span></h1>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="age" class ="form-label">AGE</label>
+                    <input type="text" id ="age"name="age" class="form-control">  
+                </div>   
+                <div class="col">
+                    <label for ="sex" class="form-label">SEX</label>
+                    <input type="text" id="sex" name="sex" class="form-control">
+                </div>      
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="cp" class="form-label">CP</label>
+                    <input type="text" id="cp" name="cp" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="trestbps" class="form-label">TRESTBPS</label>
+                    <input type="text" id="trestbps" name="trestbps" class="form-control">
+                </div>
+                
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label for ="chol" class="form-label">CHOL</label>
+                    <input type="text" id="chol" name="chol" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="fbs" class="form-label">FBS</label>
+                    <input type="text" id="fbs" name="fbs" class="form-control">
+                </div>
+                
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="restecg" class="form-label">RESTECG</label>
+                    <input type="text" id="restecg" name="restecg" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="thalach" class="form-label">THALACH</label>
+                    <input type="text" id="thalach" name="thalach" class="form-control">
+                </div>
+                
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="exang" class="form-label">EXANG</label>
+                    <input type="text" id="exang" name="exang" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="oldpeak" class="form-label">OLDPEAK</label>
+                    <input type="text" id="oldpeak" name="oldpeak" class="form-control">
+                </div>
+                
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="slope" class="form-label">SLOPE</label>
+                    <input type="text" id="slope" name="slope" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="ca" class="form-label">CA</label>
+                    <input type="text" id="ca" name="ca" class="form-control">
+                </div>
+                
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="thal" class="form-label">THAL</label>
+                    <input type="text" id="thal" name="thal" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="target" class="form-label">TARGET</label>
+                    <input type="text" id="target" name="target" class="form-control">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
