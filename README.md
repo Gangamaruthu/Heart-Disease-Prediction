@@ -1,2 +1,2 @@
 # Heart-Disease-Prediction
-To predict whether the heart disease present or not
+To predict whether the heart disease accquire or not
